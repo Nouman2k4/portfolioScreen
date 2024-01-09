@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+        .sidebar {
+            width: 100%; /* Set full width for larger screens */
+        }
+
+        @media (min-width: 768px) {
+            .sidebar {
+                width: 200px; /* Set a fixed width for the sidebar on larger screens */
+                position: fixed;
+            }
+        }
+    </style>
+</head>
+<body class="main" style="background-color: whitesmoke;">
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Responsive Sidebar -->
+            <div class="col-md-3 col-lg-2 sidebar bg-light">
+                <div class="d-flex flex-column flex-shrink-0 p-3" style="background-color: #809DAF; height:100vh;">
+                    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-black text-decoration-none">
+                        <svg class="bi pe-none me-2" width="40" height="20"><use xlink:href="#bootstrap"></use></svg>
+                        <span class="fs-4">Nouman Nawaz<br>
+                        <span class="fs-6"> Web Developer and Software techie</span></span>
+                    </a>
+                    <hr>
+                    <ul class="nav nav-pills flex-column mb-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active" aria-current="page">
+                                <svg class="bi pe-none me-2" width="16" height="16"></svg>
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-black">
+                                <svg class="bi pe-none me-2" width="16" height="16"></svg>
+                                Dashboard
+                            </a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="dropdown">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./resources/MyPic.jpeg" alt="" width="50" height="50" class="rounded-circle me-2">
+                            <strong>Nouman </strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <!-- Your main content here -->
+                <div class="row">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                      <div class="col-md-9 p-2 d-flex flex-column position-static">
+                        <h4 class="mb-0">About Me</h4>
+                        <p class="card-text mb-auto mt-1"> My name is Nouman.Currently, student at FAST NUCES Isl. I have completed
+                        several projects in front end web Development including web page design and various 
+                        projects involving game Development and chatbots.<br>
+                         <span style="color: blue;">If you would like to learn more about me. Click on the below icon for details.</span> </p>
+                        <a href="./sub-folder/aboutme.html" class="icon-link gap-1 icon-link-hover stretched-link">
+                          Continue reading
+                          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                       </a>
+                      </div>
+        
+                <div class="col-auto d-none d-lg-block">
+                   <svg class="bd-placeholder-img" width="233" height="80%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                      <title>Placeholder</title>
+                      <defs>
+                       <mask id="circle-mask" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
+                         <circle cx="0.5" cy="0.5" r="0.5" fill="white" />
+                       </mask>
+                      </defs>
+                    <rect width="100%" height="100%" fill="#55595c"></rect>
+                    <image href="./resources/MyPic.jpeg" width="100%" height="100%" mask="url(#circle-mask)" />
+                   </svg>
+    
+                </div>     
+            </div>
+
+
+              <div>
+               <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-12 col-sm-8 col-lg-6">
+                        <h4 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">Projects</h4>
+                        <p>I have done several projects in different fields.
+                            I have a list of projects in different fields.
+                            In SFML, I have created
+                            <ul>
+                                <li>Tetris</li>
+                                <li>Space Shooter</li>
+                                <li>Chess</li>
+                            </ul>
+                            and many more exciting projects.
+                            In the field of Web Development, I have done work on frameworks listed below
+                          
+                            <ul>
+                              <li>Html 5</li>
+                              <li>CSS</li>
+                              <li>Bootstrap</li>
+                              <li>JS</li>
+                              <li>jquery</li>
+                              <li>React</li>
+                              <li>express</li>
+                              <li>EJS</li>
+                            </ul>
+                        </p>
+                      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" onclick="openWebpage()">Projects</button>
+                      </div>
+
+                    </div>
+                  
+                      <div class="col-12 col-sm-4 col-lg-6">
+                        <img src="./resources/4380.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="100%" height="900vh" loading="lazy">
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- End of Projects -->
+            </div>
+            
+            <!-- End of Main Content -->
+
+            <div class="data">
+              <div id="skills">
+                  <h2>Skills</h2>
+                  <div class="container marketing mt-4" >
+      
+                      <!-- Three columns of text below the carousel -->
+                      <div class="row">
+                        <div class="col-lg-4 mt-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="currentColor" class="bi bi-broadcast" viewBox="0 0 16 16" " >
+                              <path d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707zm2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708zm5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708zm2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
+                           </svg>
+                          <h2>Communication Skills</h2>
+                          <p> I have good communication skills and have worked in group projects at Grayhat in order 
+                              to improve them.</p>
+                              <p><a class="btn btn-primary mt-4  " href="#row-features2" role="button">View details »</a></p>
+                        </div>
+                        <div class="col-lg-4 mt-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px"  fill="currentColor" class="bi bi-code-square" viewBox="0 0 16 16">
+                              <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                              <path d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z"/>
+                            </svg>
+                          <h2>Front-End Web Development</h2>
+                          <p>I have learned and done several projects on front end web development.In details I have attached
+                              anchors to some of my projects
+                          </p>
+                          <p><a class="btn btn-primary mt-1 " href="#row-features2" role="button">View details »</a></p>
+                        </div>
+                        <div class="col-lg-4 mt-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="currentColor" class="bi bi-file-code-fill" viewBox="0 0 16 16">
+                              <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 8 8.646 6.354a.5.5 0 1 1 .708-.708z"/>
+                            </svg>
+                          <h2>Problem Solving Skills</h2>
+                          <p>I have profound experience in problem solving by not limiting my skills in 
+                            a single framework or field but by doing projects in different fields.
+                          </p>
+                          <p><a class="btn btn-primary mt-1 " href="#row-features2" role="button">View details »</a></p>
+                        </div>
+      
+                      </div>
+    
+    
+              <div>
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                  <div class="col-md-7">
+                    <h2 id="row-features1" class="featurette-heading">Communication Skills</h2>
+                    <p class="lead">I have done Communication and Presentation skills in my university 
+                        and I also have done some team projects that have enlightened me with insights. Effective communication
+                        enables you to express your ideas clearly, engage in fruitful discussions, and present your thoughts persuasively.
+                        Effective communication fosters a positive group dynamic, ensures everyone's input is valued, and enables the team to accomplish collective goals successfully.
+                        Hence I have aqquired these skills and am working to further polish them.
+                    </p>
+                  </div>
+                  <div class="col-md-5">
+                    <img src="./resources/CommsSkill.jpeg" width="450px">
+                  </div>
+                </div>
+            
+                <hr class="featurette-divider">
+            
+                <div class="row featurette">
+                  <div class="col-md-7 ">
+                    <h2  id="row-features2" class="featurette-heading">Front End Web Development</h2>
+                    <p class="lead">Proficient in HTML5, CSS3, and JavaScript for building interactive and dynamic web applications.
+                        Experience with front-end frameworks/libraries such as React, Angular, or Vue.js.
+                        Strong understanding of responsive design principles and mobile-first development.
+                        Knowledge of UI/UX principles and ability to create visually appealing and user-friendly interfaces.
+                        Familiarity with version control systems like Git and collaborative development workflows.
+                        </p>
+                  </div>
+                  <div class="col-md-5 order-md-1">
+                    <img src="./resources/FEW.jpeg" width="450px" height="250px">
+                  </div>
+                </div>
+            
+                <hr class="featurette-divider">
+            
+                <div class="row featurette">
+                  <div class="col-md-7">
+                    <h2 class="featurette-heading">And lastly, Problem Solving</h2>
+                    <p  id="row-features3" class="lead">Problem-solving is a skill that develops with practice. Embrace challenges as opportunities for growth, approach problems with an open mind, and have confidence in your ability to find innovative solutions.
+                         By cultivating your problem-solving skills, you will not only overcome obstacles but also unlock your potential to make a positive impact in various areas of your life.
+                        I have aqquired intermediate level in this skill and am working to further develop this
+                        skill by practice.</p>
+                  </div>
+                  <div class="col-md-5">
+                        <img src="./resources/Jan-Solving_problem_1.jpg" width="450px" height="250px">  
+                  </div>
+                </div>
+                <hr class="featurette-divider">
+              </div>
+              </div> 
+          </div>
+        
+
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+    <footer class="bg-dark text-white text-center" style="margin-left: 150px;">
+      <div class="container py-4">
+          <div class="row">
+              <div class="col-md-4 text-center">
+                  <h5>Personal Info</h5>
+                  <p>Cofounder at Byte Innovations</p>
+                  <p>Tech enthusiastic</p>
+              </div>
+              <div class="col-md-4 text-center">
+                  <h5>Contact Information</h5>
+                  <p>Email: noumannawaz2004@gmail.com</p>
+                  <p>Phone: +92 315 1710347</p>
+              </div>
+              <div class="col-md-4 text-center">
+                  <h5>Available Timings</h5>
+                  <p>Weekdays: 7pm to 11pm(PST)</p>
+                  <p>Weekends: 11am to 11pm(PST)</p>
+              </div>
+              
+          </div>
+      </div>
+  </footer>
+  
+</body>
+</html>
